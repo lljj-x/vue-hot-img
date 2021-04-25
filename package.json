@@ -1,0 +1,48 @@
+{
+    "private": true,
+    "description": "",
+    "repository": "",
+    "homepage": "",
+    "author": "Liu.Jun",
+    "workspaces": [
+        "packages/*"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "watch": "yarn run lib:watch",
+        "build": "yarn run lib:build",
+        "lib:watch": "yarn workspace vue-hot-img watch",
+        "lib:build": "yarn workspace vue-hot-img build",
+        "demo:dev": "yarn workspace demo dev",
+        "demo:build": "yarn workspace demo build",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
+        "clean": "lerna clean && rm -rf node_modules",
+        "packages:diff": "lerna diff",
+        "packages:list": "lerna ls -l",
+        "packages:changed": "lerna changed",
+        "packages:build": "lerna run --stream --sort build",
+        "publish": "yarn run lib:build && lerna publish",
+        "autoPublish": "lerna publish --conventional-commits --yes",
+        "autoVersion": "lerna version --conventional-commits --yes"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "dependencies": {},
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "commitizen": "^4.1.2",
+        "conventional-changelog-cli": "^2.0.34",
+        "cz-conventional-changelog": "^3.2.0",
+        "husky": "^4.2.5",
+        "lerna": "^3.22.1"
+    }
+}

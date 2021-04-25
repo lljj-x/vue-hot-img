@@ -1,2 +1,7 @@
 # vue-hot-img
-vue 热区图
+Vue 热图组件，支持多个区域选择
+
+## fork
+原项目：https://github.com/OrangeXC/vue-hotzone
+
+在项目基础上调整了下使用 api
