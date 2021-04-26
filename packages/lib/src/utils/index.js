@@ -1,5 +1,5 @@
 const _ = {
-    MIN_LIMIT: 48, // Min size of zone
+    MIN_LIMIT: 20, // Min size of zone
     DECIMAL_PLACES: 4 // Hotzone positioning decimal point limit number of digits
 };
 
@@ -7,7 +7,7 @@ const _ = {
  * Get a power result of 10 for the power of the constant
  * @return {Number}
  */
-_.getMultiple = (decimalPlaces = _.DECIMAL_PLACES) => Math.pow(10, decimalPlaces);
+_.getMultiple = (decimalPlaces = _.DECIMAL_PLACES) => 10 ** decimalPlaces;
 
 /**
  * Limit decimal places

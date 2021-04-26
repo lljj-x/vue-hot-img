@@ -1,8 +1,8 @@
 {
     "private": true,
-    "description": "",
-    "repository": "",
-    "homepage": "",
+    "description": "Vue 热图组件，手动框选多个热区",
+    "repository": "https://github.com/lljj-x/vue-hot-img",
+    "homepage": "https://github.com/lljj-x/vue-hot-img",
     "author": "Liu.Jun",
     "workspaces": [
         "packages/*"

@@ -29,11 +29,11 @@ log({
 const isProduction = process.env.NODE_ENV === 'production';
 
 // config var
-const outputDir = path.resolve(__dirname, './dist');
+const outputDir = isProduction ? path.resolve(__dirname, './dist/vue-hot-zone-img') : path.resolve(__dirname, './dist');
 
 module.exports = {
     // cdn
-    publicPath: isProduction ? '/' : '/',
+    publicPath: isProduction ? '/vue-hot-zone-img' : '/',
 
     // 资源目录
     outputDir,
@@ -66,35 +66,6 @@ module.exports = {
     // webpack 链接 API，用于生成和修改 webpack 配置
     // https://github.com/mozilla-neutrino/webpack-chain
     chainWebpack: (config) => {
-        // 添加runtime
-        // config.optimization.runtimeChunk({
-        //     name: 'user-runtime'
-        // });
-
-        // 指定文件提取
-        // const splitConfig = {
-        //     cacheGroups: {
-        //         vendors: {
-        //             name: 'user-vendors-polyfill',
-        //             chunks: 'initial',
-        //             priority: 12,
-        //             test: module => /[\\/]node_modules[\\/]/.test(module.context) && /@gb|vue|vuex|vue-router/.test(module.context),
-        //         },
-        //         elementUi: {
-        //             name: 'user-element-ui',
-        //             chunks: 'initial',
-        //             priority: 10,
-        //             test: module => /[\\/]node_modules[\\/]/.test(module.context) && /element-ui/.test(module.context),
-        //         },
-        //         asyncVendor: {
-        //             name: 'chunk-vendors-async',
-        //             chunks: 'async',
-        //             priority: 8,
-        //             minChunks: 5,
-        //         }
-        //     }
-        // };
-
         config.optimization.splitChunks({});
 
         // js 文件名调整
