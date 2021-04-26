@@ -7,4 +7,6 @@ Vue 热图组件，支持多个区域选择
 在原有项目的基础上做了如下调整：
 
 * 样式调整
-*
+* Prop `zonesInit` 调整为 `v-model`
+* Emits 添加 `onSelect` emit，当选中或者取消选中时触发
+
