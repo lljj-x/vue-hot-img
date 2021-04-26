@@ -1,6 +1,6 @@
 {
     "name": "vue-hot-img",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "",
     "main": "dist/vue-hot-img.umd.min.js",
     "module": "dist/vue-hot-img.esm.min.js",
