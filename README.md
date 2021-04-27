@@ -1,5 +1,7 @@
 # vue-hot-img
-Vue 热图组件，支持多个区域选择
+预览地址：https://demo.buhuida.com/vue-hot-zone-img，
+
+Vue 热区图组件，双向绑定多个热区
 
 ## fork
 原项目：https://github.com/OrangeXC/vue-hotzone
