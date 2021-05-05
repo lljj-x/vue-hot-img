@@ -86,13 +86,7 @@ export default {
             this.changeItem(info, index);
         },
         addItem(setting) {
-            this.zones = [
-                ...this.zones,
-                {
-                    ...setting,
-                    extra: {}
-                }
-            ];
+            this.zones.push(setting);
             this.hasChange();
             this.$emit('add', setting);
             this.onSelect(setting);
