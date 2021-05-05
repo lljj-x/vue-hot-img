@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/lljj-x/vue-hot-img/compare/v0.1.1...v0.2.0) (2021-05-05)
+
+
+### Features
+
+* 支持 v-model ([6a95b57](https://github.com/lljj-x/vue-hot-img/commit/6a95b574a4608453e14301be57a2c93d4c6c2ad4))
+
+
+
+
+
 ## [0.1.1](https://github.com/lljj-x/vue-hot-img/compare/v0.1.0...v0.1.1) (2021-05-05)
 
 
