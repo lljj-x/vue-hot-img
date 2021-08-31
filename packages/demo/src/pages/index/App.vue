@@ -33,7 +33,12 @@
                     :style="getStyle(zone)"
                 >
                     <p>URL:</p>
-                    <p style="word-break: break-all">{{ zone.extra.url }}</p>
+                    <p
+                        v-if="zone.extra"
+                        style="word-break: break-all"
+                    >
+                        {{ zone.extra.url }}
+                    </p>
                 </div>
             </div>
         </div>
@@ -76,12 +81,14 @@ export default {
         inputUrl: {
             get() {
                 if (this.curZone && this.curZone.extra) {
-                    return this.curZone.extra.url;
+                    return this.curZone.extra?.url;
                 }
                 return '';
             },
             set(value) {
-                Vue.set(this.curZone.extra, 'url', value);
+                Vue.set(this.curZone, 'extra', {
+                    url: value
+                });
             }
         }
     },
