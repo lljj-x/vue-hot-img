@@ -2,7 +2,7 @@
     <div
         ref="content"
         class="hz-m-wrap"
-        @click.native="onSelect(null)"
+        @click="onSelect(null)"
     >
         <img
             :src="image"
