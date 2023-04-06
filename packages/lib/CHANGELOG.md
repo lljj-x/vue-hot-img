@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/lljj-x/vue-hot-img/compare/v0.3.0...v0.3.1) (2023-04-06)
+
+
+### Bug Fixes
+
+* **lib:** fix vue warning ([d7edfe4](https://github.com/lljj-x/vue-hot-img/commit/d7edfe4411fae7b5961309c7d5c8bbbb67c52355))
+
+
+
+
+
 # [0.3.0](https://github.com/lljj-x/vue-hot-img/compare/v0.1.1...v0.3.0) (2023-04-06)
 
 
