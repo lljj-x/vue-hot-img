@@ -1,4 +1,4 @@
-/** @license vue-hot-img (c) 2020-2021 Liu.Jun License: MIT */
+/** @license vue-hot-img (c) 2020-2023 Liu.Jun License: MIT */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -9393,7 +9393,7 @@
     return _c("div", {
       ref: "content",
       staticClass: "hz-m-wrap",
-      nativeOn: {
+      on: {
         click: function click($event) {
           return _vm.onSelect(null);
         }

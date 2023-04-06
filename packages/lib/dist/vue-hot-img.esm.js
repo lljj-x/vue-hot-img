@@ -1,4 +1,4 @@
-/** @license vue-hot-img (c) 2020-2021 Liu.Jun License: MIT */
+/** @license vue-hot-img (c) 2020-2023 Liu.Jun License: MIT */
 /*!
  * Vue.js v2.6.12
  * (c) 2014-2020 Evan You
@@ -9387,7 +9387,7 @@ var __vue_render__$1 = function __vue_render__() {
   return _c("div", {
     ref: "content",
     staticClass: "hz-m-wrap",
-    nativeOn: {
+    on: {
       click: function click($event) {
         return _vm.onSelect(null);
       }
